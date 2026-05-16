@@ -1,5 +1,4 @@
-/* Extnsion : Transactions  */
-
+/*  Extensions (Transactions)       */
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -437,9 +436,11 @@ void WithdrawTransaction()
 			}
 		}
 		SaveClientsDataToFile(ClientsFileName, vClients);
-		cout << "\nDone Successfully. New balance is: " << Client.AccountBalance - WithdrawAmount;
+		cout << "\nDone Successfully. New balance is: " << Client.AccountBalance - WithdrawAmount<<" \n ";
+
 	}
-	
+	cout << "Please enter any key to go back to Transaction Menu\n";
+	system("pause>0");
 }
 
 void ShowUpdateClientInfo()
@@ -487,8 +488,11 @@ void SureDepositTrans()
 			}
 		}
 		SaveClientsDataToFile(ClientsFileName, vClients);
-		cout << "\nDone Successfully. New balance is: " << Client.AccountBalance + DepositAmount;
+		cout << "\nDone Successfully. New balance is: " << Client.AccountBalance + DepositAmount<<"  \n";
+
 	}	
+	cout << "Please enter any key to go back to Transaction Menu\n";
+	system("pause>0");
 }
 
 void ShowFindClient()
