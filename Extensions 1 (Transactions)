@@ -18,7 +18,7 @@ struct sClient
 	bool MarkForDelete = false;
 };
 
-// Forward Declaration
+
 void ShowMenu();
 
 vector<string> SplitString(string S1, string delim = "#//#")
